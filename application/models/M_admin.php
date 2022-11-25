@@ -81,4 +81,129 @@ class M_admin extends CI_Model
 
         return true;
     }
+
+
+    //--- PRODUK ---//
+
+    // //get produk
+    // public function get_produk()
+    // {
+    //     $this->load->database();
+    //     $data = $this->db->get('produk');
+    //     return $data->result_array();
+    // }
+
+    // //insert produk
+    // public function insert_produk($data)
+    // {
+    //     $this->load->database();
+    //     $insert = $this->db->insert('produk', $data);
+    // }
+
+    // //update produk
+    // public function update_produk($data, $id)
+    // {
+    //     $this->load->database();
+    //     $this->where('id', $id);
+    //     $this->update('produk', $data);
+
+    //     $result = $this->db->get_where('produk', array('id' => $id));
+    //     return $result->row_array();
+    // }
+
+    // //delete produk
+    // public function delete_produk($id)
+    // {
+    //     $this->load->database();
+    //     $result = $this->db->get_where('produk', array('id' => $id));
+
+    //     $this->db->where('id', $id);
+    //     $this->db->delete('produk');
+
+    //     return $result->row_array();
+    // }
+
+
+
+    //--- transaksi ---//
+
+    // //get transaksi
+    // public function get_transaksi()
+    // {
+    //     $this->load->database();
+    //     $data = $this->db->get('transaksi');
+    //     return $data->result_array();
+    // }
+
+    // //insert transaksi
+    // public function insert_transaksi($data)
+    // {
+    //     $this->load->database();
+    //     $insert = $this->db->insert('transaksi', $data);
+    // }
+
+    // //update transaksi
+    // public function update_transaksi($data, $id)
+    // {
+    //     $this->load->database();
+    //     $this->where('id', $id);
+    //     $this->update('transaksi', $data);
+
+    //     $result = $this->db->get_where('transaksi', array('id' => $id));
+    //     return $result->row_array();
+    // }
+
+    // //delete transaksi
+    // public function delete_transaksi($id)
+    // {
+    //     $this->load->database();
+    //     $result = $this->db->get_where('transaksi', array('id' => $id));
+
+    //     $this->db->where('id', $id);
+    //     $this->db->delete('transaksi');
+
+    //     return $result->row_array();
+    // }
+
+
+
+    //--- ITEM TRANSAKSI ---//
+
+    // //get item_transaksi
+    // public function get_item_transaksi()
+    // {
+    //     $this->load->database();
+    //     $data = $this->db->get('item_transaksi');
+    //     return $data->result_array();
+    // }
+
+    // //insert item_transaksi
+    // public function insert_item_transaksi($data)
+    // {
+    //     $this->load->database();
+    //     $insert = $this->db->insert('item_transaksi', $data);
+    // }
+
+    // //update item_transaksi
+    // public function update_item_transaksi($data, $id)
+    // {
+    //     $this->load->database();
+    //     $this->where('id', $id);
+    //     $this->update('item_transaksi', $data);
+
+    //     $result = $this->db->get_where('item_transaksi', array('id' => $id));
+    //     return $result->row_array();
+    // }
+
+    // //delete item_transaksi
+    // public function delete_item_transaksi($id)
+    // {
+    //     $this->load->database();
+    //     $result = $this->db->get_where('item_transaksi', array('id' => $id));
+
+    //     $this->db->where('id', $id);
+    //     $this->db->delete('item_transaksi');
+
+    //     return $result->row_array();
+    // }
 }

@@ -13,7 +13,7 @@ use LDAP\Result;
 class Api_pcs extends REST_Controller
 {
 
-    private $secret_key = "123Qwe321";
+    private $secret_key = "anakquda";
 
     function __construct()
     {

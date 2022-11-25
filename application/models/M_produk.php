@@ -17,7 +17,8 @@ class M_produk extends CI_Model
     //--- PRODUK ---//
 
     //get produk
-    public function get_produk(){
+    public function get_produk()
+    {
         // $data = $this->db->get('produk');
         $this->db->select('produk.id, admin.nama as nama admin, produk.nama as nama menu, produk.harga, produk.stok');
         $this->db->from('produk');
@@ -27,12 +28,14 @@ class M_produk extends CI_Model
     }
 
     //insert produk
-    public function insert_produk($data){
+    public function insert_produk($data)
+    {
         $insert = $this->db->insert('produk', $data);
     }
 
     //update produk
-    public function update_produk($data, $id){
+    public function update_produk($data, $id)
+    {
         $this->db->where('id', $id);
         $this->db->update('produk', $data);
 
@@ -41,7 +44,8 @@ class M_produk extends CI_Model
     }
 
     //delete produk
-    public function delete_produk($id){
+    public function delete_produk($id)
+    {
         $result = $this->db->get_where('produk', array('id' => $id));
 
         $this->db->where('id', $id);
@@ -51,7 +55,8 @@ class M_produk extends CI_Model
     }
 
     //get produk by id
-    public function cekProdukExist($id){
+    public function cekProdukExist($id)
+    {
         $data = array(
             "id" => $id
         );
